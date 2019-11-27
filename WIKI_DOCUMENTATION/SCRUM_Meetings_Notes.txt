@@ -1,13 +1,15 @@
                               ----------SCRUM Meeting Notes For Project 1, Team "Uhh"----------
-By SCRUM Master Keaton Boardman
+                                                By SCRUM Master Keaton Boardman
 
 SCRUM Meeting 1: 11/19/2019, from 13:48 hours to 14:20 hours EST--> 
-*Brady, Team-Lead: Made TRELLO Board for KANBAN methodology, Made a Git, Finished module for "Triggers" in Trailhead, working on "Tests" module in Trailhead; 
+*Brady, Team-Lead: Made TRELLO Board for KANBAN methodology, Made a Git, Finished module for "Triggers" in Trailhead, working on "Tests" 
+module in Trailhead; 
 *Rabia, Git Admin: Created Project 1 Git. Repo called "Stage1", Working on Badges assigned by Harvey; 
 *Sabir, Lead Sales Force Researcher: Doing badges, created additional rough-drafts for Project Org's ERD; 
 *Keaton, SCRUM Master: Made ERD rough-drafts and uploaded pics to #general channel, conducted a SCRUM meeting on 11/19/2019 where I
 gathered these notes and I'm now posting them here on the #scrumban-notes channel, working on "Triggers" module for the first Badge
-Harvey assigned yesterday on 11/18/2019; It was decided that at tomorrow's SCRUM we will decide on which ERD we will use to construct our Org. in Sales Force;
+Harvey assigned yesterday on 11/18/2019; It was decided that at tomorrow's SCRUM we will decide on which ERD we will use to construct 
+our Org. in Sales Force;
 END of NOTES for SCRUM meeting 11/19/2019
 
 SCRUM Meeting 2: 11/20/2019, from 09:04 hours to 09:30 hours EST--> 
@@ -24,7 +26,8 @@ ERD Rough Draft 3 on the channel #general ;
 END of NOTES for SCRUM meeting 11/20/2019
 
 SCRUM Meeting 3: 11/21/2019, from 09:07 hours to 09:20 hours EST --> 
-*Sabir: begins discussion of final decision for ERD; at 09:16 hours we decide on our final ERD, see #general channel for a post of the white board screen shot of the final ERD; Sabir has finished 2 badges, his is on his 3rd badge; 
+*Sabir: begins discussion of final decision for ERD; at 09:16 hours we decide on our final ERD, see #general channel for a post of the 
+white board screen shot of the final ERD; Sabir has finished 2 badges, his is on his 3rd badge; 
 *Rabia: Finished 2 Triggers Badges and Lightning App Badges; 
 *Brady: Finished 3rd Badge and is working on Lightning Flow Badge pertaining to Web UI, Researched how to make an Org, Brady conducted a
 meeting with Harvey and Got ERD finalized and approved, Harvey confirmed that we will use Visual Studio Code IDE linked-to/integrated
@@ -53,7 +56,8 @@ Points; suggests we decide and delineate labor on UI and Story Points for App;
 Automation Super Badge, and I have 2 Apex Spec small Badges).
 END of NOTES for SCRUM meeting 11/25/2019
 
-SCRUM Meeting 6: 11/26/2019, from 14:28 hours to 14:34 hours EST --> *Brady: Completed 2 sub badges in Super Badge App Customization; Created a :exclamation: Trial Version Org :exclamation: and User Account, Delegated Tasks on Project to everyone on team;
+SCRUM Meeting 6: 11/26/2019, from 14:28 hours to 14:34 hours EST --> *Brady: Completed 2 sub badges in Super Badge App Customization; 
+Created a :exclamation: Trial Version Org :exclamation: and User Account, Delegated Tasks on Project to everyone on team;
 *Rabia: Created Objects in Brady's Org; Made Look-Up Relations between Objects in Org based on ERD, Made Schema for Org, Made fields and
 junction objects; got sub-badge for process automation and app customization;
 *Sabir: Working on Apex Spec. Super Badge, did one sub-badge for Automation process, Assigned by Brady to work on the Trello Board;
