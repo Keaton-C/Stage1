@@ -1,0 +1,46 @@
+----------SCRUM Meeting Notes For Project 1, Team "Uhh"----------
+By SCRUM Master Keaton Boardman
+
+SCRUM Meeting 1: 11/19/2019, from 13:48 hours to 14:20 hours EST--> 
+*Brady, Team-Lead: Made TRELLO Board for KANBAN methodology, Made a Git, Finished module for "Triggers" in Trailhead, working on "Tests" module in Trailhead; 
+*Rabia, Git Admin: Created Project 1 Git. Repo called "Stage1", Working on Badges assigned by Harvey; 
+*Sabir, Lead Sales Force Researcher: Doing badges, created additional rough-drafts for Project Org's ERD; 
+*Keaton, SCRUM Master: Made ERD rough-drafts and uploaded pics to #general channel, conducted a SCRUM meeting on 11/19/2019 where I gathered these notes and I'm now posting them here on the #scrumban-notes channel, working on "Triggers" module for the first Badge Harvey assigned yesterday on 11/18/2019; It was decided that at tomorrow's SCRUM we will decide on which ERD we will use to construct our Org. in Sales Force;
+END of NOTES for SCRUM meeting 11/19/2019
+
+SCRUM Meeting 2: 11/20/2019, from 09:04 hours to 09:30 hours EST--> 
+*Brady, Team-Lead: Finished Testing Badge, doing Asynchronous Badge, added Admin Privileges to Github, convened Team, updated Trello Board, Missed Time to have Discord voice channel meeting in #remote-meetings channel (Will meet with Harvey on Google Meetups tomorrow see the #announcements channel:star: ), helped update ERD rough Draft 3;
+*Rabia, Git Admin: Gave Admin rights to everyone on Github, working on last stage of Badge 2; 
+*Sabir, Lead Sales Force Researcher: Re-drawn the ERD Relationships of 4 Objects (CUSTOMERS, APPOINTMENTS, DOCTORS, LOCATIONS), helped update ERD Rough Draft 3, Finished 2nd Badge on Asynchronous Badge;
+*Keaton, SCRUM Master: Held SCRUM ceremony this morning, took SCRUM Notes and uploaded Notes to the P1T"U" Discord Server channel #scrumban-notes, came up with 1st 2 TEST Card Ideas on KANBAN board and first few Web UI Cards where ONLY Visual Force will be needed for the front end Web UI NO HTML or JS, also working on Trailhead Badges, Also posted a camera pic of the white board drawing for the ERD Rough Draft 3 on the channel #general ;
+END of NOTES for SCRUM meeting 11/20/2019
+
+SCRUM Meeting 3: 11/21/2019, from 09:07 hours to 09:20 hours EST --> 
+*Sabir: begins discussion of final decision for ERD; at 09:16 hours we decide on our final ERD, see #general channel for a post of the white board screen shot of the final ERD; Sabir has finished 2 badges, his is on his 3rd badge; 
+*Rabia: Finished 2 Triggers Badges and Lightning App Badges; 
+*Brady: Finished 3rd Badge and is working on Lightning Flow Badge pertaining to Web UI, Researched how to make an Org, Brady conducted a meeting with Harvey and Got ERD finalized and approved, Harvey confirmed that we will use Visual Studio Code IDE linked-to/integrated with Sales Force and the VS Code IDE directories will be in Github local and remote branches within the Stage1 Repo.  All team members must take tutorial badge on https://trailhead.salesforce.com/content/learn/projects/quickstart-vscode-salesforce 
+*Keaton: Almost finished with 2nd Badge, did SCRUM notes; 
+END of NOTES for SCRUM meeting 11/21/2019
+
+SCRUM Meeting 4: 11/22/2019, from 09:19 hours to 09:26 hours EST --> *Keaton: 2 to 3 badges done, working on Formulas and Validations Badge as of now, 0 Super Badges obtained (behind); 
+*Brady: Working on 3rd Badge, Visual Studio Badge and Visual Studio Code Badge, learning to build Object Schemas, Road block is Logging into the Trailhead Playground Remotely with V.S, to go around this road block, Brady may use his actual Org instead; *Rabia: Working on Super Badge for Lightening Pro; 
+*Sabir: Finished Asynchronous Badge, Testing and Defining Classes in Visual Force within Sales Force, working on Basic Integration Badge next; 09:24 hours -- Brady informs us that no one has achieved one of the 3 assigned Super Badges yet... All 3 Super Badges are due on THIS Monday 11/25/2019 before 09:00 hours, therefore Brady instructed us to get all 3 Super Badges done before this deadline;
+END of NOTES for SCRUM meeting 11/22/2019
+
+SCRUM Meeting 5: 11/25/2019, from 13:35 hours to 13:42 hours EST --> *Brady: Progress, finished all prerequisite badge challenges before 3 Super Badges, he does not have any Super Badges yet though, Updated Trello Board with Story Points and Created Dummy Account based on Harvey's suggestions in the meeting today;
+*Rabia: Working on App. Customization Super Badge, 0 Super Badges; Suggests we start working on Page Layout UI of Project1 App and Story Points; suggests we decide and delineate labor on UI and Story Points for App;
+*Sabir: Working on Apex Specialist Super Badge; Sabir suggests we create Objects for Proj1 in a dummy account test Org;
+*Keaton: I have 4 Parts out of 7 Parts finished for obtaining the Process Automation Super Badge, (I have Unlocked the Process Automation Super Badge, and I have 2 Apex Spec small Badges).
+END of NOTES for SCRUM meeting 11/25/2019
+
+SCRUM Meeting 6: 11/26/2019, from 14:28 hours to 14:34 hours EST --> *Brady: Completed 2 sub badges in Super Badge App Customization; Created a :exclamation: Trial Version Org :exclamation: and User Account, Delegated Tasks on Project to everyone on team;
+*Rabia: Created Objects in Brady's Org; Made Look-Up Relations between Objects in Org based on ERD, Made Schema for Org, Made fields and junction objects; got sub-badge for process automation and app customization;
+*Sabir: Working on Apex Spec. Super Badge, did one sub-badge for Automation process, Assigned by Brady to work on the Trello Board; changed the text to green for the completed assignments to members and in progress boards;
+*Keaton: I have unlocked the Process Automation Super badge and I am 4/7 parts toward successfully obtaining my Process Automation Super Badge; Worked on the UI Login Page in Visual-force (need an Apex Class Dummy Handler to start making text fields); Updated the P1T"U" Discord sever channel with all tasks that Brady assigned.
+END of NOTES for SCRUM meeting 11/26/2019
+
+SCRUM Meeting 7: 11/27/2019, from 08:39 hours to 08:45 hours EST --> *Brady: Made Trello board better after feed back, deleted some cards; Created wire frames for the UI Pages, Login/Registration Pages and other UI pages; Discussed flows, Visual-force elements to use the trial edition does not work as liked;
+*Keaton: As I worked on the UI for Login page in Visual-force, found out we need a dummy .apxc for the text field ID; the Trial Edition Org. does NOT allow to make new .apxc and .apxt (Apex) files; I am unable to make a simple dummy UI for the Login page in Visual-force without a simple, skeleton Apex Class that is "on Share".
+*Rabia: working on registration page UI, :exclamation: Will Need a New Org. not a trial Org. edition but a developer edition :exclamation: This is due to the fact we are unable to make .apxc files in the trial edition AND Harvey informed us that we must use a Manifest in Visual Studio Code and periodically update our Repos;
+*Sabir: developing Workflow of project and re-searching how to use the Google Maps API to link location coordinates to locations on Google Maps API; Sabir is one step away from obtaining his Process Automation Super Badge.
+END of NOTES for SCRUM meeting 11/27/2019
