@@ -4,7 +4,7 @@
 
     <apex:pageBlock title="Find A Doctor Who's Right For You">
         <apex:pageBlockSection >
-            <apex:form>
+            <apex:form >
             <!--NOTE: Need drop down menus instead of text fields-->
         	<p>Search For Doctors Specialization</p>
             <apex:inputText label="Specialization: " value="{!specialization}"/>
