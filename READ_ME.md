@@ -34,4 +34,4 @@ App will have a total of 4 main page types: LOGIN page, REGISTRATION page, HOME 
 *SEARCH page: if user is Customer, they will be able to request an appointment with a doctor, doctor is selected with the criteria of
 "specialization", "language(s)", and "gender".
 
---END SECOND ENTRY, 12-04-2019 08:32 hours EST; Keaton Boardman, SCRUM Master--
+--END SECOND ENTRY, 12-04-2019 08:45 hours EST; Keaton Boardman, SCRUM Master--
