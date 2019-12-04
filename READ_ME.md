@@ -29,8 +29,12 @@ in this READ _ ME . md file as well.
 App will have a total of 4 main page types: LOGIN page, REGISTRATION page, HOME page, SEARCH page;
 
 *LOGIN page: will have 2 text fields, user name and pass word, will have a button for the REGISTRATION page;
+
 *REGISTRATOIN page: will allow for user to input new user-name and password into ACCOUNT sObject (standard Object) on Org.
-*HOME page: after successful login, user will be directed to HOME page (aka Dash Board) where appointments that are scheduled, pending, or completed can be seen.
+
+*HOME page: after successful login, user will be directed to HOME page (aka Dash Board) where appointments that are scheduled, pending, 
+or completed can be seen.
+
 *SEARCH page: if user is Customer, they will be able to request an appointment with a doctor, doctor is selected with the criteria of
 "specialization", "language(s)", and "gender".
 
