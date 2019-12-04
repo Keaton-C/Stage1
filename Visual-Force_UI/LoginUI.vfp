@@ -1,0 +1,17 @@
+<!--PROJECT 1: LOGIN PAGE USER INTERFACE-->
+<apex:page >
+    <!--Successfully Added a static resource page-->
+    <apex:stylesheet value="{! $Resource.LoginUI_Resource }"/>
+
+    <h class="block1">Welcome To Southern Heart Medical Insurance</h>
+    <apex:pageBlock title="Southern Heart Account Portal">
+        <apex:pageBlockSection >
+        Southern Heart Is Healthcare With a Heart
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+	<br/>
+	<br/>
+  <!-- <apex:inputText value="{!inputUserName}" id="userNameInput"/>-->
+
+    <p class="scribe1">LOGIN</p>
+</apex:page>
