@@ -1,0 +1,32 @@
+public with sharing class SearchPageControler {
+    
+    public string specialization{get;set;}
+    public string language{get;set;}
+    public string gender{get;set;}
+    
+    //Set User Input from text fields using IDs
+    public static void setSpecialization(String s){
+        specialization=s;
+    }
+    
+    public static void setLanguage(String s){
+        language=s;
+    }
+    
+    public static void setGender(String s){
+        gender=s;
+    }
+    
+    //Retrieve User Input to use in Org
+    public static String getSpecialization(){
+        return specialization;
+    }
+    
+    public static String getLanguage(){
+        return language;
+    }
+    
+    public static String getGender(){
+        return gender;
+    }
+}
