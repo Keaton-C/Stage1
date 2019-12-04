@@ -104,3 +104,10 @@ Visual Studio Code IDE, Brady will help him with that;
 *Keaton: I helped Rabia and Sabir reach step 5 for the Process Automation Super Badge yesterday, I created a messy scratch flow chart 
 for a broad summary of Project 1, including Apex code and Visual Force;
 END of NOTES for SCRUM meeting 12/3/2019
+
+SCRUM Meeting: 12/4/2019, from 08:46 hours to 08:52 hours EST -->
+*Brady: Wire frame completed and drawn on white board (Keaton took pictures and uploaded them to #general channel), got Sabir on Github, everyone synced on Org. and Visual Studio Code IDE.
+*Rabia: Working on Registration Page UI, she switched from using the Standard Controller in Apex Class to using the Custom Controller, she still needs to push her code to her git branch;
+*Sabir: Started to work on Dash Board UI (Home Page) today. NOTIFIED: we are not working on Super Badges, Project 1 ONLY until time permits for the Security Super Badge to be worked on;
+*Keaton: I updated the READ_ME file on Github to explain a brief overview of the pages and functionality of app, Brady informed me that "specialization", "language", and "gender" for Doctor selection needs to be drop down menus selections for the Customer User, I pushed code for the Search Page (Appointments UI) to my branch (the code is bad though...);
+END of NOTES for SCRUM meeting 12/4/2019
