@@ -1,11 +1,16 @@
 <apex:page controller="RegistrationController" docType="html-5.0">
      <apex:form >
-    	<apex:pageBlock title="User Registration"  id="Registratin"> <h1></h1><br/>
+    	<apex:pageBlock title="User Registration"  id="Registratin"> <br/>
             <apex:pageBlockSection >
                 <apex:image id="theImage" value="/img/myimage.gif" width="220" height="55" alt="Description of image here"/>
+
             </apex:pageBlockSection>
-    		<apex:pageBlockSection >
-    			   <apex:panelGrid columns="2" id="Grid" border="3"> 
+            <apex:pageBlockSection columns="2" showHeader="true">
+            <apex:pageBlockSectionItem >The iamge will go here</apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+
+    		
+    			  <apex:panelGrid columns="2" id="Grid" border="3"> 
                     <apex:outputLabel value="FirstName:" for="F_Name"/>
                     <apex:inputText id="F_Name" value="{!First_Name}"/>
                   	<apex:outputLabel value="LastName" for="L_Name"/>
@@ -15,11 +20,9 @@
                     <apex:outputLabel value="Password" for="U_Password"  />
                     <apex:inputSecret id="U_Password"  value="{!Password}" required="true"/> 
                     <apex:outputLabel value="Gender" for="U_Gender"  />  
-                       
-                     <apex:selectList id="User_gender" size="1">
-                         <apex:selectOptions value="{!gender}"/>
-                       </apex:selectList>
-                   
+                    <apex:selectList id="User_gender" size="1">
+                    <apex:selectOptions value="{!gender}"/>
+                    </apex:selectList>
                  	<apex:outputLabel value="PhoneNo" for="U_Phoneno"/>
                     <apex:input id="U_Phoneno" type="tel" value="{!Phone}"  />
                     <apex:outputLabel value="Email" for="U_Email"/>
@@ -28,16 +31,15 @@
                     <apex:inputText id="U_Address" value="{!Address}"/> 
                  	<apex:outputLabel value="City" for="U_City"/>
                     <apex:input id="U_City"  value="{!City}"  type="text"/>
-                    <apex:outputLabel value="ZipCode" for="U_Zipcode"/>
-                       
-			<!-- <apex:input   id="U_Zipcode" value="{!zipcode}"   type="number"/>   -->
+                    <apex:outputLabel value="ZipCode" for="U_Zipcode"/>         
+					<apex:input id="U_Zipcode" value="{!Zipcode}"  />   
 
 		</apex:panelGrid>
+                </apex:pageBlockSectionItem>
 		</apex:pageBlockSection>
       <apex:pageBlockButtons >
 			<apex:commandButton value="Login" action="{!InsertUserData}"/>
     	</apex:pageBlockButtons>  
 	</apex:pageBlock> 
 </apex:form>
-
 </apex:page>
