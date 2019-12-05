@@ -1,0 +1,23 @@
+<apex:page controller="SearchPageController">
+    <!--Successfully Added a static resource page-->
+    <!--apex:stylesheet value="{! $Resource.SearchPageUI_Resource }"/-->
+
+    <apex:pageBlock title="Find A Doctor Who's Right For You">
+        <apex:pageBlockSection >
+            <apex:form >
+            <!--NOTE: Need drop down menus instead of text fields-->
+        	<p>Search For Doctors Specialization</p>
+            <apex:inputText label="Specialization: " value="{!specialization}"/>
+        	<br/>
+            <p>Search For Doctors Language</p>
+            <apex:inputText label="Language: " value="{!language}"/>
+        	<br/>
+            <p>Search For Doctors Gender</p>
+            <apex:inputText label="Gender: " value="{!gender}"/>
+        	<br/>
+            </apex:form>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+	<br/>
+	<br/>
+</apex:page>
