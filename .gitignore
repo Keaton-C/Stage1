@@ -5,6 +5,8 @@
 # Salesforce cache
 .sfdx
 .localdevserver/
+.sfdx/tools/apex.db
+sfdx-project.json
 # json file
 force-app/main/default/lwc/jsconfig.json
 # all db files
