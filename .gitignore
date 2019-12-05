@@ -29,3 +29,4 @@ ehthumbs.db
 $RECYCLE.BIN/
 .sfdx/tools/apex.db
 force-app/main/default/lwc/jsconfig.json
+*.db
