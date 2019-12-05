@@ -1,0 +1,30 @@
+
+<apex:page controller="login" docType="html-5.0">
+
+    <apex:form>
+
+    <apex:pageBlock>
+
+        <apex:pageBlockSection>Header will go here</apex:pageBlockSection>
+       <apex:pageBlockSection columns="2">
+           <apex:pageBlockSectionItem>Image will go here</apex:pageBlockSectionItem>
+           <apex:pageBlockSectionItem>
+           <apex:panelGrid columns="2">
+            <apex:outputLabel id="UserName"  value="User Name" for="User_Name"/>
+           <apex:input id="User_Name"  value="{!UserName}"/>
+           <apex:outputLabel id="Password"  value="Password" for="U_Password"/>
+
+           <apex:input id="U_Password"  value="{!Password}"/>
+        </apex:panelGrid>
+               </apex:pageBlockSectionItem>
+ 
+        </apex:pageBlockSection>
+
+          <apex:pageBlockButtons >
+            <apex:commandButton value="Login" />
+        </apex:pageBlockButtons>  
+
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>
+ 
