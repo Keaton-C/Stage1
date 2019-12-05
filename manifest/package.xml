@@ -37,7 +37,7 @@
         <name>StaticResource</name>
     </types>
     <types>
-        <members>User</members>
+        <members>User, Contact, Account</members>
         <name>CustomObject</name>
     </types>
     <types>
