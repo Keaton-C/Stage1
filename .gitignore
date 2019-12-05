@@ -29,5 +29,7 @@ ehthumbs.db
 $RECYCLE.BIN/
 # sfdx directory
 .sfdx
+# json file
 force-app/main/default/lwc/jsconfig.json
+# all db files
 *.db
