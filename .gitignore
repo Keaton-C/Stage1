@@ -3,8 +3,12 @@
 # For useful gitignore templates see: https://github.com/github/gitignore
 
 # Salesforce cache
-.sfdx/
+.sfdx
 .localdevserver/
+# json file
+force-app/main/default/lwc/jsconfig.json
+# all db files
+*.db
 
 # Logs
 logs
@@ -27,9 +31,4 @@ Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
-# sfdx directory
-.sfdx
-# json file
-force-app/main/default/lwc/jsconfig.json
-# all db files
-*.db
+
