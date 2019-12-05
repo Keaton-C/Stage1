@@ -27,6 +27,7 @@ Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
-.sfdx/tools/apex.db
+# sfdx directory
+.sfdx
 force-app/main/default/lwc/jsconfig.json
 *.db
