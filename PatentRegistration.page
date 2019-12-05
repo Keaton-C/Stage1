@@ -3,7 +3,7 @@
     	<apex:pageBlock title="User Registration"  id="Registratin"> <h1></h1><br/>
             <apex:pageBlockSection >
                 <apex:image id="theImage" value="/img/myimage.gif" width="220" height="55" alt="Description of image here"/>
-
+//demonstration to push
             </apex:pageBlockSection>
     		<apex:pageBlockSection >
     			   <apex:panelGrid columns="2" id="Grid" border="3"> 
