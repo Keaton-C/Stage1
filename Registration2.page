@@ -1,0 +1,36 @@
+<apex:page>
+<apex:page standardController="User">
+        <h1>
+            Sign Up!
+        </h1>
+    <apex:form>
+    <apex:pageBlock title="User Registration"  mode="edit"> <h1></h1><br/>
+    <apex:pageBlockSection>
+    <apex:panelGrid   columns="2" id="Grid" border="3">     
+    <apex:outputLabel value="FirstName" for="F_Name">First Name:</apex:outputLabel>
+    <apex:inputField  id="F_Name" value="{!user.First_Name__c}"></apex:inputField><br/><br/>
+    <apex:outputLabel value="LastName" for="L_Name" >Last Name:</apex:outputLabel>
+    <apex:inputField id="L_Name" value="{!user.Last_Name__c}"></apex:inputField><br/><br/>
+    <apex:outputLabel value="UserName" for="U_Name">User Name:</apex:outputLabel>
+    <apex:inputField id="U_Name" value="{!user.Username}" ></apex:inputField><br/><br/>
+     <apex:outputLabel value="Password" for="U_Password">Password:</apex:outputLabel>
+    <apex:inputField id="U_Password"  value="{!user.Password}"></apex:inputField><br/><br/>
+    <apex:outputLabel value="PhoneNo" for="U_Phoneno">Phone No:</apex:outputLabel>
+    <apex:inputField id="U_Phoneno"   value="{!user.Phone}" ></apex:inputField><br/><br/>   
+    <apex:outputLabel value="Address" for="U_Address">Address</apex:outputLabel>
+    <apex:inputField id="U_Address" value="{!user.Address}"></apex:inputField><br/><br/>
+    <apex:outputLabel value="City" for="U_City">City</apex:outputLabel>
+    <apex:inputField id="U_City"  value="{!user.}" ></apex:inputField>
+    <apex:outputLabel value="ZipCode" for="U_Zipcode">ZipCode</apex:outputLabel>
+        <apex:inputField id="U_Zipcode"/><br/><br/>
+   
+    <apex:pageBlockButtons>
+	<apex:commandButton action="{!save}" value="Save"/>
+     </apex:pageBlockButtons>
+
+
+</apex:panelGrid>
+</apex:pageBlockSection>
+</apex:pageBlock> 
+</apex:form>
+</apex:page>
