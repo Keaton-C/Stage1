@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment__c</fullName>
+    <description>Appointment can call Roll-Up Summaries of each AppointmentContact&#39;s unique Contact.  This lets Appointments track doctors and patients.</description>
+    <externalId>false</externalId>
+    <label>Appointment</label>
+    <referenceTo>Appointment__c</referenceTo>
+    <relationshipLabel>AppointmentContacts</relationshipLabel>
+    <relationshipName>AppointmentContacts</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

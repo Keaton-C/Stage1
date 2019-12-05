@@ -143,24 +143,24 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Custom object depicting a medical appointment between a patient (Customer Community User contact) and doctor (Partner Community User contact).</description>
+    <description>Junction object for relating Appointments to Contacts.  Each Contact has a Master-Detail Relationship to AppointmentContacts that allows us to acquire two related contacts (1 Doctor and 1 Patient) per appointment.  Each Appointment has a Master-Detail relationship to AppointmentContacts that that allows us to access appointments as a roll-up summary.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <label>Appointment</label>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>AppointmentContacts</label>
     <nameField>
-        <label>Appointment Name</label>
+        <label>AppointmentContacts Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Appointments</pluralLabel>
+    <pluralLabel>AppointmentContacts</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

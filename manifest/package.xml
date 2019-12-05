@@ -26,6 +26,10 @@
     </types>
     <types>
         <members>*</members>
+        <name>CustomSite</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
@@ -33,6 +37,10 @@
         <name>StaticResource</name>
     </types>
     <types>
+        <members>Contact</members>
+        <name>CustomObject</name>
+    </types>
+        <types>
         <members>User</members>
         <name>CustomObject</name>
     </types>
