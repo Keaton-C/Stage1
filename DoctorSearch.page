@@ -1,0 +1,28 @@
+<apex:page controller="DoctorController">
+    <apex:form >
+        <apex:pageBlock >
+        	<apex:selectList value="{!drSpec}">
+                <apex:selectOptions value="{!specializations}"/>
+            </apex:selectList>
+            <apex:selectList value="{!drLang}">
+                <apex:selectOptions value="{!languages}"/>
+            </apex:selectList>
+            <apex:selectList value="{!drGend}">
+                <apex:selectOptions value="{!genders}"/>
+            </apex:selectList>
+            <apex:commandButton value="Search All" action="{!unfilter}"/>
+            <apex:commandButton value="Search Restricted" action="{!filter}"/>
+            <apex:commandButton value="Create 20 Doctors" action="{!genDoctors}"/>
+            <apex:commandButton value="Destroy All Doctors" action="{!cleanDoctors}"/>            
+        </apex:pageBlock>
+	</apex:form>
+        <apex:pageBlock title="Doctors List">
+                <!-- Doctors List -->
+                <apex:pageBlockTable value="{! doctors }" var="dr" id="myTable">
+                    <apex:column value="{! dr.Name }"/>
+                    <apex:column value="{! dr.Specialization__c }"/>
+                    <apex:column value="{! dr.Language__c }"/>
+                    <apex:column value="{! dr.Gender__c }"/>
+                </apex:pageBlockTable>
+    	</apex:pageBlock>
+</apex:page>
