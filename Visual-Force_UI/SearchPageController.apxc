@@ -1,0 +1,63 @@
+public with sharing class SearchPageController {
+    
+    public String getSpec = '';
+    public String getLang = '';
+    public String getGen = '';
+    
+    public SearchPageController(){
+        //for the drop down menus
+        String[] specializations = new String[]
+        {'Podiatry','Neonatology','Orthopaedics','Pulmonology','Cardiothoracics', 'Endocrinologist',
+         'Pediatrics','Cardiology','Gynaecology','Oncology','Gastroenterologist','Anesthesiology','Dermatology', 'Urology'};
+		
+		this.specializationOptions = new SelectOption[]{};
+        
+        for(String s: specializations){
+        	this.specializationOptions.add(new SelectOption(s,s));
+        }
+        
+        String[] languages = new String[]
+        {'English','Mandarin','Arabic','Korean','Spanish','Farsi','Hindi','Cantonese','Mandarin (PRC)','French','Vietnamese','Tagalog',
+         'Portuguese','Japanese','Yiddish','German'};
+             
+        this.languageOptions = new SelectOption[]{};
+            
+        for(String s: languages){
+           this.languageOptions.add(new SelectOption(s,s));     
+        }
+        
+        String[] gender = new String[]
+        {'Male','Female','Other'};
+             
+        this.genderOptions = new SelectOption[]{};
+            
+        for(String s: gender){
+           this.genderOptions.add(new SelectOption(s,s));     
+        }
+    }
+    
+    public SelectOption[] specializationOptions{
+        //this is where the list gets pulled into the drop-down menu
+        public get;
+        private set;
+    }
+    
+    public SelectOption[] languageOptions{
+        //this is where the list gets pulled into the drop-down menu
+        public get;
+        private set;
+    }
+
+    public SelectOption[] genderOptions{
+        //this is where the list gets pulled into the drop-down menu
+        public get;
+        private set;
+    }
+	//end of methods and constructor for drop down menu    
+    
+    public PageReference SearchDoctor() {
+        return null;
+    }
+    
+    
+}

@@ -1,0 +1,51 @@
+<apex:page controller="SearchPageController">
+    <!--Successfully Added a static resource page-->
+    <apex:stylesheet value="{! $Resource.SearchPageUI_Resource }"/>
+
+    <apex:pageBlock title="Southern Heart Medical Group">
+        <apex:pageBlockSection >
+            <apex:form >
+            <!--NOTE: Need drop down menus instead of text fields-->
+            <table>
+                <tr>
+                    <td>
+            <span>Select The Doctor's Specialization: </span>
+            <apex:selectList size="1">
+                <apex:selectOptions value="{!specializationOptions}" />
+            </apex:selectList>
+        	<br/>
+            <br/>
+            <span>Select The Doctor's Language: </span>
+            <apex:selectList size="1">
+                <apex:selectOptions value="{!languageOptions}" />
+            </apex:selectList>
+        	<br/>
+            <br/>
+            <span>Select The Doctor's Gender: </span>
+            <br/>
+            <apex:selectList size="1">
+                <apex:selectOptions value="{!genderOptions}" />
+            </apex:selectList>
+                	</td>
+                    <td>
+                    <div class="indented1">
+                    <p style="float: left;">Find A Doctor Who's Right For You</p>
+                    </div>
+                    </td>
+            	</tr>
+            </table>
+            </apex:form>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+	<br/>
+	<br/>
+    <apex:pageBlock>
+    <apex:pageBlockSection>
+    	<apex:form>
+        <div align="center" draggable="false">
+        <apex:commandButton value="SEARCH DOCTORS" action="{!SearchDoctor}"/>   
+        </div>
+    	</apex:form>
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
