@@ -1,32 +1,63 @@
-public class SearchPageController {
+public with sharing class SearchPageController {
     
-    public string specialization{get;set;}
-    public string language{get;set;}
-    public string gender{get;set;}
+    public String getSpec = '';
+    public String getLang = '';
+    public String getGen = '';
     
-    //Set User Input from text fields using IDs
-    public static void setSpecialization(String s){
-        specialization=s;
+    public SearchPageController(){
+        //for the drop down menus
+        String[] specializations = new String[]
+        {'Podiatry','Neonatology','Orthopaedics','Pulmonology','Cardiothoracics', 'Endocrinologist',
+         'Pediatrics','Cardiology','Gynaecology','Oncology','Gastroenterologist','Anesthesiology','Dermatology', 'Urology'};
+		
+		this.specializationOptions = new SelectOption[]{};
+        
+        for(String s: specializations){
+        	this.specializationOptions.add(new SelectOption(s,s));
+        }
+        
+        String[] languages = new String[]
+        {'English','Mandarin','Arabic','Korean','Spanish','Farsi','Hindi','Cantonese','Mandarin (PRC)','French','Vietnamese','Tagalog',
+         'Portuguese','Japanese','Yiddish','German'};
+             
+        this.languageOptions = new SelectOption[]{};
+            
+        for(String s: languages){
+           this.languageOptions.add(new SelectOption(s,s));     
+        }
+        
+        String[] gender = new String[]
+        {'Male','Female','Other'};
+             
+        this.genderOptions = new SelectOption[]{};
+            
+        for(String s: gender){
+           this.genderOptions.add(new SelectOption(s,s));     
+        }
     }
     
-    public static void setLanguage(String s){
-        language=s;
+    public SelectOption[] specializationOptions{
+        //this is where the list gets pulled into the drop-down menu
+        public get;
+        private set;
     }
     
-    public static void setGender(String s){
-        gender=s;
+    public SelectOption[] languageOptions{
+        //this is where the list gets pulled into the drop-down menu
+        public get;
+        private set;
+    }
+
+    public SelectOption[] genderOptions{
+        //this is where the list gets pulled into the drop-down menu
+        public get;
+        private set;
+    }
+	//end of methods and constructor for drop down menu    
+    
+    public PageReference SearchDoctor() {
+        return null;
     }
     
-    //Retrieve User Input to use in Org
-    public static String getSpecialization(){
-        return specialization;
-    }
     
-    public static String getLanguage(){
-        return language;
-    }
-    
-    public static String getGender(){
-        return gender;
-    }
 }
