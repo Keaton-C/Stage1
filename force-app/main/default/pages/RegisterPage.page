@@ -2,14 +2,16 @@
      <apex:form >
     	<apex:pageBlock title="User Registration"  id="Registratin"> <br/>
             <apex:pageBlockSection >
-                <apex:image id="theImage" 
+                <apex:image id="theImage"
                             value="/img/myimage.gif" 
                             width="220" 
                             height="55" 
                             alt="Description of image here"/>
             </apex:pageBlockSection>
             <apex:pageBlockSection columns="2" showHeader="true">
-            <apex:pageBlockSectionItem >The iamge will go here</apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <!--The image will go here-->
+            </apex:pageBlockSectionItem>
             <apex:pageBlockSectionItem >
 
     		
