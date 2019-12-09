@@ -1,11 +1,11 @@
 <apex:page controller="LoginController" docType="html-5.0">
-
+<apex:stylesheet value="!$Resource.LoginStyleSheet"/>
     <apex:form >
 
         <apex:pageBlock >
     
             <apex:pageBlockSection >
-                <!--Header will go here-->
+                <!-- Header goes here -->
             </apex:pageBlockSection>
             <apex:pageBlockSection columns="2">
                 
@@ -21,7 +21,8 @@
                         <apex:input id="User_Name"  value="{!UserName}"/>
                         <apex:outputLabel id="Password"  value="Password" for="U_Password"/>
                         <apex:input id="U_Password"  value="{!Password}"/>
-                        <apex:commandButton value="Login" />
+                        <apex:commandButton value="Login as Patient" action="{!LoginPat}"/>
+                        <apex:commandButton value="Login as Doctor" action="{!LoginDoc}"/>
                     </apex:panelGrid>
                 </apex:pageBlockSectionItem>
         

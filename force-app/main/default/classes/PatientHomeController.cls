@@ -66,12 +66,12 @@ public class PatientHomeController
   
     public pagereference logout(){
        //perform Business logic here
-        PageReference pageRef = new PageReference('/default/secur/logout.jsp');
+        PageReference pageRef = new PageReference('/apex/LoginPage');
         pageRef.setRedirect(true);
         return pageRef;
     }
     public PageReference docPage() {
-        PageReference pr = new PageReference('/apex/DoctorHomePage');
+        PageReference pr = new PageReference('/apex/SearchPage');
         pr.setRedirect(true);
         return pr;
     }

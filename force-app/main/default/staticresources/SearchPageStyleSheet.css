@@ -1,0 +1,26 @@
+h.block1 {  font-weight: bold;
+        	font-size:36px;
+        	color:purple;
+        	margin-left : 10%;
+        	margin-right : 100px;
+}
+p.scribe1 {	font-size:22px;
+        	text-align:center;
+            color:red;
+}
+
+a:link, a:visited, a:hover, a:active {
+
+  background-color: green;
+
+  color: white;
+
+  padding: 10px 25px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+}
