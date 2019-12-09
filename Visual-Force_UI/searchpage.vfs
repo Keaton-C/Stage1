@@ -43,8 +43,13 @@
     <apex:pageBlockSection>
     	<apex:form>
         <div align="center" draggable="false">
-        <apex:commandButton value="SEARCH DOCTORS" action="{!SearchDoctor}"/>   
+        <apex:commandButton value="SEARCH DOCTORS" action="{!SearchDoctor}" rerender="OUTPUT"/>   
         </div>
+            <apex:outputPanel id="OUTPUT" rendered="{!showDoctorResults}"> 
+                <outputText value="Specialization : {!getSpec}"/>
+                <outputText value="Language : {!getLang}"/>
+                <outputText value="Gender : {!getGen}"/>
+  </apex:outputPanel>
     	</apex:form>
     </apex:pageBlockSection>
     </apex:pageBlock>
