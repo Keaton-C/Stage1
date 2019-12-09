@@ -1,0 +1,32 @@
+<apex:page Controller="PatientHomeController" 
+           standardStylesheets="true" 
+           showHeader="false" 
+           showChat="false">
+            
+    <apex:image url="https://developer.salesforce.com/files/salesforce-developer-network-logo.png" />            
+   
+    	<apex:form >
+        	<p style="text-align:right;"><apex:commandButton value="Logout" action="logout()"/>  </p> 
+          	<apex:pageBlock title="HomePage">
+            	<apex:pageBlockSection title="Patient Information">
+                 	Welcome: {! $User.FirstName }{! $User.LastName }
+              	</apex:pageBlockSection>
+            	<apex:commandButton value="All status" action="{!allStatus}"/>
+            	<apex:commandButton value="Pending" action="{!Pending}"/>
+           		<apex:commandButton value="Confirmed" action="{!Confirmed}"/>
+              	<apex:commandButton value="Completed" action="{!Completed}"/>
+             	<apex:commandButton value="Rejected" action="{!Rejected}"/>
+                <apex:commandButton value="New Appointment" action="{!docPage}"/>
+              	<apex:pageBlockTable title="Appointment list" value="{!appts}" var="appt">
+             
+					<apex:column value="{!appt.Appointment__r.Start_Time__c}" headerValue="Date"/>
+                   	<apex:column value="{!appt.Appointment__r.Status__c}" headerValue="Status"/>
+                   	<apex:column value="{!appt.Contact__r.name}" headerValue="Doctor Name" />
+                   	<apex:column value="{!Appt.Contact__r.Specialty__c}" headerValue="Speciality"/>
+                   	<apex:column value="{!Appt.Contact__r.Gender__c}" headerValue="Gender" />
+                   	<apex:column value="{!Appt.Contact__r.Language__c}" headerValue="Lanuage"/>
+                        
+	            </apex:pageBlockTable>
+     		</apex:pageBlock>
+     </apex:form>
+</apex:page>

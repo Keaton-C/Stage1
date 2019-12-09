@@ -1,5 +1,7 @@
 public class DoctorHomeController 
-{   public String currentId { get ; set ; }
+{   // CurrentID prop tracks which row "Accept/Reject" button was pushed at
+    public String currentId { get ; set ; }
+	// 
     public List<AppointmentContacts__c> patients { get ; set ; }
     private string status='';
     User currUser;
@@ -51,7 +53,7 @@ public class DoctorHomeController
     
  	// Call this method to update the page and refetch results
   	private  void getAppointment()
-    {	// make a list of appointment junctions involving current user
+    {	// make a list of appointment junctions involving this doctor
         List<AppointmentContacts__c> doctorApps = 	
         [ 	SELECT Appointment__r.id
           	FROM AppointmentContacts__c 
