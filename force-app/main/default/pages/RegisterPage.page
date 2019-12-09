@@ -1,16 +1,16 @@
 <apex:page controller="RegistrationController" docType="html-5.0">
      <apex:form >
-    	<apex:pageBlock title="User Registration"  id="Registratin"> <br/>
+    	<apex:pageBlock title="Welcome to Southern Heart Health"  id="title">
+            <br/>
             <apex:pageBlockSection >
-                <apex:image id="theImage"
-                            value="/img/myimage.gif" 
-                            width="220" 
-                            height="55" 
-                            alt="Description of image here"/>
+                <!-- Not sure what this is - Brady -->
             </apex:pageBlockSection>
             <apex:pageBlockSection columns="2" showHeader="true">
             <apex:pageBlockSectionItem >
                 <!--The image will go here-->
+                <apex:image id="LoginImage"
+                            url="https://c.na174.visual.force.com/resource/1575850441000/LoginPhoto" 
+                            alt="Description of image here"/>
             </apex:pageBlockSectionItem>
             <apex:pageBlockSectionItem >
 

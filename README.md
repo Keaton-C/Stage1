@@ -4,8 +4,7 @@
 ##		(VISUAL-FORCE and APEX only)
 ##		and SALES FORCE Org. OBJECTS and APEX BACK END
 
-###		TEAM "Uhh"-> *Team-Lead: Brady; *SCRUM-Master: Keaton; *Git-Repo Admin: Rabia;
-			     *Head Sales Force Research Dev: Sabir
+###		TEAM "Uhh"-> *Team-Lead: Brady; *SCRUM-Master: Keaton; *Git-Repo Admin: Rabia *Head Sales Force Research Dev: Sabir
 
 
 This project will contain multiple repositories, starting with the "Stage1" repository.  The branches

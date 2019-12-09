@@ -7,7 +7,7 @@
     <allowStandardLookups>false</allowStandardLookups>
     <allowStandardPortalPages>true</allowStandardPortalPages>
     <allowStandardSearch>false</allowStandardSearch>
-    <authorizationRequiredPage>LoginPage</authorizationRequiredPage>
+    <authorizationRequiredPage>SiteLogin</authorizationRequiredPage>
     <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
     <browserXssProtection>true</browserXssProtection>
     <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
@@ -26,4 +26,5 @@
     <siteAdmin>teamuhproject1@southernheart.com</siteAdmin>
     <siteType>ChatterNetwork</siteType>
     <subdomain>southernhearthealth-developer-edition</subdomain>
+    <urlPathPrefix>patient</urlPathPrefix>
 </CustomSite>

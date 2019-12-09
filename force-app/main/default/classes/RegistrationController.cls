@@ -1,6 +1,5 @@
-public class RegistrationController {
-   
-    
+public class RegistrationController 
+{
     public String First_Name{get;set;}
     public String Last_Name{get;set;}
 	public String Username{get;set;}
@@ -17,17 +16,16 @@ public class RegistrationController {
     Gender=getGender();
     }
      
-    public List <SelectOption> getGender(){
-     List <SelectOption> option=new List<SelectOption>();  
-      /* for (Picklistentry g : User.Gender__c.getDescribe().getPicklistValues())
-        {
-            option.add(new SelectOption(g.getLabel(),g.getValue()));
-        }*/
-        return option;
-    }
+	public List <SelectOption> getGender(){
+     	List <SelectOption> option=new List<SelectOption>();  
+     	for (Picklistentry g : Contact.Gender__c.getDescribe().getPicklistValues())
+       		if ( g.getLabel() != 'None specified' ) 
+	            option.add( new SelectOption( g.getLabel(), g.getValue() ) );
+    	return option;
+  	}
 //    User UserData=new User(First_Name__c=First_Name,Username=this.Username,Password__c=Password,Phone=this.Phone);
-    public void InsertUserData(){ }
+  	public void InsertUserData(){ }
        
         
     
-    }// end class
+}// end class
