@@ -1,0 +1,44 @@
+<apex:page Controller="DoctorHomeController" 
+           standardStylesheets="true" 
+           showHeader="false" 
+           showChat="false">
+            
+  <apex:image url="https://developer.salesforce.com/files/salesforce-developer-network-logo.png" />            
+   
+      <apex:form >
+      	<p style="text-align:right;"><apex:commandButton value="Logout" action="logout()"/>  </p> 
+        <apex:pageBlock title="HomePage">
+        	<apex:pageBlockSection title="Doctor Information">
+            	Welcome: {! $User.FirstName }{! $User.LastName }
+            </apex:pageBlockSection>
+            	<apex:commandButton value="All status" action="{!allStatus}"/>
+            	<apex:commandButton value="Pending" action="{!Pending}"/>
+           		<apex:commandButton value="Confirmed" action="{!Confirmed}"/>
+              	<apex:commandButton value="Completed" action="{!Completed}"/>
+             	<apex:commandButton value="Rejected" action="{!Rejected}"/>
+              	
+            	<apex:pageBlockTable title="Appointment list" value="{!patients}" var="appt">
+        
+                  	<apex:column >
+                    	<apex:commandLink action="{!accept}"><span style="color:blue" >Accept</span>
+                        	<apex:param assignTo="{!currentId}" name="{!appt.id}" value="{!Appt.id}"/>
+                        </apex:commandLink>&nbsp;&nbsp;
+                        <apex:commandLink action="{!reject}"><span style="color:red" >Cancel</span>
+                            <apex:param assignTo="{!currentId}" name="{!appt.id}" value="{!Appt.id}"/>
+                        </apex:commandLink>
+                    </apex:column>
+                              
+                                            
+                    <apex:column value="{!appt.Appointment__r.Start_Time__c}" headerValue="Date"/>
+                    <apex:column value="{!appt.Appointment__r.Status__c}" headerValue="Status"/>
+                    <apex:column value="{!appt.Contact__r.name}" headerValue="Patient Information" />
+                    <apex:column value="{!appt.Contact__r.email}" headerValue="Patient Email"/>
+                    <apex:column value="{!appt.Contact__r.phone}" headerValue="Patient Phone"/>
+                             
+               	</apex:pageBlockTable>
+         
+     </apex:pageBlock>
+     </apex:form>
+   
+     
+</apex:page>
