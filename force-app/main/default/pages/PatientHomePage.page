@@ -6,7 +6,7 @@
     <apex:image url="https://developer.salesforce.com/files/salesforce-developer-network-logo.png" />            
    
     	<apex:form >
-        	<p style="text-align:right;"><apex:commandButton value="Logout" action="logout()"/>  </p> 
+        	<p style="text-align:right;"><apex:commandButton value="Logout" action="{!logout}"/>  </p> 
           	<apex:pageBlock title="HomePage">
             	<apex:pageBlockSection title="Patient Information">
                  	Welcome: {! $User.FirstName }{! $User.LastName }

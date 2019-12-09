@@ -1,23 +1,40 @@
 <apex:page controller="SearchPageController">
-    <!--Successfully Added a static resource page-->
-    <!--apex:stylesheet value="{! $Resource.SearchPageUI_Resource }"/-->
-
-    <apex:pageBlock title="Find A Doctor Who's Right For You">
-        <apex:pageBlockSection >
-            <apex:form >
-            <!--NOTE: Need drop down menus instead of text fields-->
-        	<p>Search For Doctors Specialization</p>
-            <apex:inputText label="Specialization: " value="{!specialization}"/>
-        	<br/>
-            <p>Search For Doctors Language</p>
-            <apex:inputText label="Language: " value="{!language}"/>
-        	<br/>
-            <p>Search For Doctors Gender</p>
-            <apex:inputText label="Gender: " value="{!gender}"/>
-        	<br/>
-            </apex:form>
-        </apex:pageBlockSection>
-    </apex:pageBlock>
+    <apex:stylesheet value="{! $Resource.SearchPageStyleSheet }"/>
+    <apex:form >
+    	<apex:pageBlock title="Southern Heart Medical Group">
+        	<div>Select The Doctor's Specialization: </div>
+           	<apex:selectList size="1" value="{!drSpec}">
+                <apex:selectOptions value="{!specialtyOptions}" />
+            </apex:selectList> <br/>
+            <div>Select The Doctor's Language: </div> 
+            <apex:selectList size="1" value="{!drLang}">
+                <apex:selectOptions value="{!languageOptions}" />
+            </apex:selectList> <br/>
+			<div>Select The Doctor's Gender: </div>
+ 			<apex:selectList size="1" value="{!drGend}">
+            	<apex:selectOptions value="{!genderOptions}" />
+           	</apex:selectList> <br/>
+            <div class="indented1">
+            	<p style="float: left;">Find A Doctor Who's Right For You</p>
+            </div>
+             <apex:pageBlockSection >
+                    <div align="center" draggable="false">
+                        <apex:commandButton value="SEARCH DOCTORS" 
+                                            action="{!SearchDoctor}" 
+                                            />   
+                    </div>
+            </apex:pageBlockSection>
+    	</apex:pageBlock>
+    </apex:form>
 	<br/>
 	<br/>
+	<apex:pageBlock title="Doctors List">
+    	<!-- Doctors List -->
+        <apex:pageBlockTable value="{! doctors }" var="dr" id="myTable">
+        	<apex:column value="{! dr.Name }"/>
+            <apex:column value="{! dr.Specialty__c }"/>
+            <apex:column value="{! dr.Language__c }"/>
+            <apex:column value="{! dr.Gender__c }"/>
+        </apex:pageBlockTable>
+  	</apex:pageBlock>
 </apex:page>
