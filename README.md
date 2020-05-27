@@ -1,4 +1,4 @@
-#				--REVATURE CORPORATION: SALES FORCE TRAINING--
+#				REVATURE CORPORATION: SALES FORCE TRAINING
 
 ##		PROJECT 1: "Southern Heart Insurance Company" Web Application UI FRONT END
 ##		(VISUAL-FORCE and APEX only)
